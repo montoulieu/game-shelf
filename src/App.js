@@ -86,7 +86,7 @@ class App extends Component {
   fetchSearchData(query) {
     if (query != null)
       fetch(
-        "https://api.thegamesdb.net/Games/ByGameName?apikey=fc24ef1a316c12ec1f22c3f526fc7e02e9156bf129d3073b320508c503833656&name=" +
+        "https://api.thegamesdb.net/Games/ByGameName?apikey=184b0052abd2f3c8c372d6a14fbf622dae2f563df0985009431ce631575aabf2&name=" +
           query +
           "&fields=players%2Coverview%2Cpublishers%2Cgenres%2Crating%2Cplatform%2Ccoop%2Cyoutube&include=boxart"
       )
