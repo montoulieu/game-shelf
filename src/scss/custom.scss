@@ -1,0 +1,34 @@
+$theme-colors: (
+  "primary": #66a5d8,
+  "danger": #ff4136,
+  "light": rgb(241, 241, 241),
+  "dark": #23303d,
+);
+
+$body-bg: #2d3d4d;
+$btn-font-weight: bold;
+
+$grid-breakpoints: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$grid-breakpoints: map-merge(
+  (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1400px
+  ),
+  $grid-breakpoints
+);
+
+$container-max-widths: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$container-max-widths: map-merge(
+  (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1440px
+  ),
+  $container-max-widths
+);

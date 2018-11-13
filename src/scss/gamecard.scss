@@ -1,0 +1,24 @@
+$color-dreamcast : #ff5800;
+$color-sega-cd : #009cf4;
+$color-gameboy: #93bf00;
+
+.game-card {
+  img {
+    height: 250px;
+  }
+  .btn {
+    color: theme-color('light');
+  }
+  &.platform-sega-dreamcast .btn {
+    border-color: $color-dreamcast;
+    background-color: $color-dreamcast;
+  }
+  &.platform-nintendo-gameboy .btn {
+    border-color: $color-gameboy;
+    background-color: $color-gameboy;
+  }
+  &.platform-sega-cd .btn {
+    border-color: $color-sega-cd;
+    background-color: $color-sega-cd;
+  }
+}
