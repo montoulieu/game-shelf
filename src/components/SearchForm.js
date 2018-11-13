@@ -11,7 +11,7 @@ class SearchForm extends React.Component {
     const query = this.inputRef.current.value;
     this.props.fetchSearchData(query);
     this.props.history.push('/search');
-    event.currentTarget.reset();
+    // event.currentTarget.reset();
   }
 
   render() {
