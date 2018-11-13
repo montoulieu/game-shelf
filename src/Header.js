@@ -4,7 +4,7 @@ import SearchForm from './components/SearchForm';
 class Header extends React.Component {
   render() {
     return (
-      <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+      <nav className="navbar navbar-expand-md navbar-dark bg-dark text-light shadow-sm">
         <a className="navbar-brand text-uppercase font-weight-bold pl-xl-5 font-italic">Game Shelf</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>

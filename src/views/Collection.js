@@ -2,11 +2,10 @@ import React from "react";
 import GameCard from "../components/GameCard";
 
 class Collection extends React.Component {
-  componentDidMount() {
-  }
+  componentDidMount() {}
 
   render() {
-    console.log(this.props.collection);
+    // console.log(this.props.openGame);
     return (
       <div className="row collection">
         {Object.keys(this.props.collection).length !== 0 &&
@@ -14,15 +13,15 @@ class Collection extends React.Component {
             <GameCard
               key={key}
               index={key}
-              game={this.props.collection[key]['game']}
-              images={this.props.collection[key]['images']}
+              game={this.props.collection[key]["game"]}
+              images={this.props.collection[key]["images"]}
               addGame={this.props.addGame}
+              openGame={this.props.openGame}
+              platforms={this.props.platforms}
             />
-          ))
-        }
+          ))}
       </div>
-
-    )
+    );
   }
 }
 
